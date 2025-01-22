@@ -1,15 +1,19 @@
 <script setup lang="ts">
-  defineProps({
-    name: {
-      type: String,
-      required: true
-    },
-    emoji: {
-      type: String,
-      required: false,
-      default: '🍚'
-    }
-  })
+  defineProps<{
+    name: string,
+    emoji: string
+  }>()
+  // defineProps({
+  //   name: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   emoji: {
+  //     type: String,
+  //     required: false,
+  //     default: '🍚'
+  //   }
+  // })
 </script>
 
 <template>
