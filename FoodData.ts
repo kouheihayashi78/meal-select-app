@@ -1,4 +1,10 @@
-export const FoodData = [
+export interface Food {
+  name: string;
+  emoji: string;
+}
+
+export const FoodData: Food[] = [
+  // Food型の配列なのでFood[]
   {
     name: 'カレー',
     emoji: '🍛',
